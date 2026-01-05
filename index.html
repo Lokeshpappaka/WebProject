@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#restaurant">Restaurant</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="content-section">
+            <div class="text-content">
+                <h1 class="main-heading">LOREM IPSUM</h1>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.
+                </p>
+                <button class="cta-button">Click Me</button>
+            </div>
+        </section>
+        <section class="image-section">
+            <div class="image-container">
+                <img src="images/pexels-robin-stickel-70497.jpg" alt="Delicious burger with fries" class="main-image">
+            </div>
+        </section>
+    </main>
+
+    <!-- Second Section with Image Grid and Text Box -->
+    <section class="second-section">
+        <div class="images-grid">
+            <div class="grid-item grid-item-top-left">
+                <img src="images/pexels-mister-mister-3434523.jpg" alt="Night scene with neon signs" class="grid-image">
+            </div>
+            <div class="grid-item grid-item-bottom-left">
+                <img src="images/pexels-rachel-claire-6752433.jpg" alt="Outdoor cafe scene" class="grid-image">
+            </div>
+            <div class="grid-item grid-item-right">
+                <img src="images/pexels-eva-bronzini-6141651.jpg" alt="Gourmet food spread" class="grid-image">
+            </div>
+        </div>
+        <div class="text-box-section">
+            <div class="coral-text-box">
+                <p class="text-box-small">LOREM IPSUM</p>
+                <h2 class="text-box-heading">LOREM IPSUM SET ADEMIR</h2>
+                <div class="text-box-cta">
+                    <span>Click</span>
+                    <span class="arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navList = document.querySelector('.nav-list');
+        
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
